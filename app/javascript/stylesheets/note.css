@@ -1,0 +1,7 @@
+.shd {
+    box-shadow: 0 0 11px gray;
+}
+
+.shd:hover {
+    box-shadow: 0 0 11px black;
+}

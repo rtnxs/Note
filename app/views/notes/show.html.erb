@@ -1,0 +1,10 @@
+<div class="row m-5">
+  <div class="col-md-6">
+    <p>Title: <%= @note.title %></p>
+    <p>Body: <%= @note.body %></p>
+
+    <%= link_to "Home", root_path, class: 'btn btn-outline-primary' %>
+    <%= link_to "Edit", edit_note_path(@note), class: 'btn btn-outline-success' %>
+    <%= link_to "Destroy", @note, method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-outline-danger' %>
+  </div>
+</div>
