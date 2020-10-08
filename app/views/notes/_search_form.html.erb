@@ -1,4 +1,4 @@
-<%= search_form_for @q, builder: SimpleForm::FormBuilder,
+<%= search_form_for @ransack_search, builder: SimpleForm::FormBuilder,
                     wrapper: :inline_form,
                     html: { class: "form-inline" } do |f| %>
   <%= f.input :completed_eq, collection: [['Yes', true], ['No', false]], include_blank: 'All' %>

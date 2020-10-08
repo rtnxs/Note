@@ -4,8 +4,8 @@ class NotesController < ApplicationController
   before_action :set_note, only: %i[show edit update destroy]
 
   def index
-    @q = Note.ransack(params[:q])
-    @notes = @q.result.order('completed')
+    @ransack_search = Note.ransack(params[:q])
+    @notes = @ransack_search.result.order('completed')
   end
 
   def show; end
