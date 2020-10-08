@@ -1,24 +1,21 @@
-# README
+## Тестовое задание
+*Что должно получится: нужно сделать элементарный Todo List, 
+то есть одна страничка с полем ввода текста заметки, кнопкой 
+сохранения заметки и списком заметок с чекбоксом, датой добавления 
+и еще чем-нибудь, что вашей душе угодно, под этим полем.*
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Среда разработки
+* ruby 2.6.3
+* rails 6.0.1
+* bootstrap 4.3.1
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Для запуска
+> установить bundler -> `gem install bundler`
+>
+> установить гемы используемы при разработке -> `bundle install`
+>
+>
+> создать дб и сделать миграцию -> `rails db:create && rails db:migrate`
+> запуск лок.серв -> `rails s`
+>
+> по адресу `localhost:3000` будет это приложение 
