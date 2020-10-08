@@ -14,7 +14,7 @@
 >
 > установить гемы используемы при разработке -> `bundle install`
 >
-> запустисть проверку файлов yarn 'yarn install --check-files'
+> запустисть проверку файлов yarn -> `yarn install --check-files`
 >
 > создать дб и сделать миграцию -> `rails db:create && rails db:migrate`
 >
