@@ -1,8 +1,8 @@
 <%= search_form_for @q, builder: SimpleForm::FormBuilder,
                     wrapper: :inline_form,
                     html: {class: "form-inline"} do |f| %>
-  <%= f.search_field :created_at_gteq, class: 'form-control', data: { behavior: "flatpickr" } %>
-  <%= f.search_field :created_at_lteq, class: 'form-control', data: { behavior: "flatpickr" } %>
+  <%= f.search_field :created_at_gteq, class: 'form-control', data: { behavior: "flatpickr" }, placeholder: 'time from' %>
+  <%= f.search_field :created_at_lteq, class: 'form-control', data: { behavior: "flatpickr" }, placeholder: 'time until' %>
   <%= f.submit 'Search', class: "btn btn btn-outline-info" %>
   <%= link_to 'Clean', notes_path, class: "btn btn-outline-secondary" %>
 <% end %>
