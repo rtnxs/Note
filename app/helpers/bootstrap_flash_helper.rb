@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BootstrapFlashHelper
   unless const_defined?(:ALERT_TYPES)
     ALERT_TYPES = %i[

@@ -1,4 +1,6 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  root "notes#index"
+  root 'notes#index'
   resources :notes
 end
