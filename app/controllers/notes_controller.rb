@@ -5,7 +5,7 @@ class NotesController < ApplicationController
 
   def index
     @q = Note.ransack(params[:q])
-    @notes = @q.result
+    @notes = @q.result.order('completed')
   end
 
   def show; end
