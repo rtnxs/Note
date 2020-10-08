@@ -5,7 +5,8 @@ class NotesController < ApplicationController
   before_action :set_note, only: %i[show edit update destroy]
 
   def index
-    @notes = Note.all
+    @q = Note.ransack(params[:q])
+    @notes = @q.result
   end
 
   def show; end
