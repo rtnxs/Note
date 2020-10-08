@@ -1,6 +1,7 @@
 <%= search_form_for @q, builder: SimpleForm::FormBuilder,
                     wrapper: :inline_form,
-                    html: {class: "form-inline"} do |f| %>
+                    html: { class: "form-inline" } do |f| %>
+  <%= f.input :completed_eq, collection: [['Yes', true], ['No', false]], include_blank: 'All' %>
   <%= f.search_field :created_at_gteq, class: 'form-control', data: { behavior: "flatpickr" }, placeholder: 'time from' %>
   <%= f.search_field :created_at_lteq, class: 'form-control', data: { behavior: "flatpickr" }, placeholder: 'time until' %>
   <%= f.submit 'Search', class: "btn btn btn-outline-info" %>

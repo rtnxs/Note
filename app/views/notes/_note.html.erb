@@ -1,10 +1,11 @@
 <div class="row justify-content-center">
   <% @notes.each do |note| %>
-    <div class="col-md-3 border rounded shd m-2">
-      <div class="border-bottom"><%= link_to note.title, note_path(note) %></div>
+    <div class="col-md-3 border rounded m-2 <%= note_completed?(note) %>">
+      <div class="border-bottom"><%= link_to note.title, edit_note_path(note) %></div>
       <p><%= note.body %></p>
       <p class="text-right text-muted mb-0 border-top">
         <sub>
+          <%= note.completed? ? 'completed' : 'uncompleted' %>
           <%= l note.created_at, format: :short %>
         </sub>
       </p>
